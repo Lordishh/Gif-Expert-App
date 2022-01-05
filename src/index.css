@@ -3,5 +3,17 @@
 }
 
 body {
-  padding: 60px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: top;
+  min-height: 100vh;
+  font-size: 1rem;
+  background: linear-gradient(to right, #f7f8f8, #acbb78);
+}
+
+input {
+  width: 100%;
+  background-color: #e9f0d0;
 }
