@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const GifGrid = ({ category }) => {
+  useEffect(() => {
+    getGifs();
+  }, []);
+
   const getGifs = async () => {
     const url =
       "https://api.giphy.com/v1/gifs/search?q=dragon-ball&limit=10&api_key=aDLU7OcWT5mfIdcxb97sOrolY0FLoC0N";
@@ -17,8 +21,6 @@ const GifGrid = ({ category }) => {
     });
     console.log(gifs);
   };
-
-  getGifs();
 
   return (
     <>
