@@ -7,9 +7,14 @@ const GifGrid = ({ category }) => {
 
   return (
     <>
-      <h3 className="title"> Gifs de la búsqueda de "{category}".</h3>
+      <h3 className="title animate__animated animate__rubberBand">
+        {" "}
+        Gifs de la búsqueda de "{category}".
+      </h3>
 
-      {loading && <p>Cargando...</p>}
+      {loading && (
+        <p className="animate__animated animate__flash loading">Cargando...</p>
+      )}
 
       <div className="card-grid">
         {images.map((img) => (

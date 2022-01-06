@@ -3,11 +3,11 @@ import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 
 const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["Dragon Ball"]);
+  const [categories, setCategories] = useState(["one punch"]);
 
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <h1 className="animate__animated animate__flip logo">GifExpertApp</h1>
       <AddCategory setCategories={setCategories} />
       <hr />
 
