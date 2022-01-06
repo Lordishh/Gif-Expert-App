@@ -28,8 +28,15 @@ body {
 }
 
 input {
-  width: 100%;
+  width: 20%;
   background-color: #e9f0d0;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {

@@ -18,12 +18,12 @@ const AddCategory = ({ setCategories }) => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <div className="form__group field">
+      <div className="form__group ">
         <input
           type="input"
           value={inputValue}
           onChange={handleInputChange}
-          // placeholder="search gif"
+          placeholder="buscar gif"
         />
       </div>
     </form>

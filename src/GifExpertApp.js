@@ -8,6 +8,7 @@ const GifExpertApp = () => {
   return (
     <>
       <h1 className="animate__animated animate__flip logo">GifExpertApp</h1>
+      <hr />
       <AddCategory setCategories={setCategories} />
       <hr />
 
