@@ -10,7 +10,7 @@ const GifGrid = ({ category }) => {
 
   const getGifs = async () => {
     const url =
-      "https://api.giphy.com/v1/gifs/search?q=cartoon+network&limit=20&api_key=aDLU7OcWT5mfIdcxb97sOrolY0FLoC0N";
+      "https://api.giphy.com/v1/gifs/search?q=dragon+ball&limit=20&api_key=aDLU7OcWT5mfIdcxb97sOrolY0FLoC0N";
 
     const resp = await fetch(url);
     const { data } = await resp.json();
@@ -28,7 +28,7 @@ const GifGrid = ({ category }) => {
 
   return (
     <>
-      <h3> {category} </h3>
+      <h3 className="title"> Gifs de la búsqueda "{category}".</h3>
       <div className="card-grid">
         {images.map((img) => (
           <GifGridItem key={img.id} {...img} />
